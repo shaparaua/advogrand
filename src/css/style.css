@@ -1,0 +1,332 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.container {
+    width: 980px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+a {
+    color: #1C1C1C;
+}
+
+a:hover {
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*btn*/
+
+.btn {
+    width: 140px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 12px;
+    background: linear-gradient(to right, #C11717, #E42626);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn--big {
+    width: 300px;
+    height: 65px;
+    font-weight: 500;
+    font-size: 18px;
+    background: linear-gradient(to right, #C11717, #E42626);
+    position: absolute;
+    top: 415px;
+    left: 50px;
+    z-index: 10;
+}
+
+
+/*header*/
+
+.nav {
+    width: 100%;
+    height: 57px;
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item {}
+
+.nav-link {
+    color: #1C1C1C;
+}
+
+
+/*intro*/
+
+.intro {
+    width: 100%;
+    height: 80px;
+}
+
+.intro__contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__logo {
+    line-height: 80px;
+    display: block;
+}
+
+.logo_1 {
+    width: 35px;
+    height: 40px;
+}
+
+.logo_2 {
+    width: 145px;
+    height: 23px;
+}
+
+.connection {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 80px;
+}
+
+.intro__number {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 80px;
+}
+
+.intro__phone {
+    line-height: 80px;
+}
+
+.phone__logo {
+    fill: #C11717;
+    padding: 6px;
+    border: 2px solid #C11717;
+    border-radius: 5px;
+}
+
+.phone__logo:first-child {
+    margin-right: 15px;
+}
+
+.phone {
+    width: 20px;
+    height: 20px;
+    fill: #C11717;
+}
+
+
+/*intro---///*/
+
+
+/*section*/
+
+
+.section {
+    width: 100%;
+    height: 610px;
+    background: url(../img/img_01.png) no-repeat center center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.section__image {}
+
+.section__title {
+    color: #000;
+    font-size: 32px;
+    width: 845px;
+}
+
+.section__title h1 {
+    float: left;
+    margin-top: 100px;
+}
+
+.section__text {
+    width: 630px;
+    color: #000;
+    float: left;
+    font-weight: 500;
+}
+
+.section__text p {
+    font-size: 24px;
+    margin-top: 45px;
+    font-weight: 500;
+}
+
+/*services*/
+
+.services {
+    width: 100%;
+    height: 630px;
+}
+
+.services__title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #1C1C1C;
+    margin: 88px auto 56px;
+}
+
+.services__item {
+    margin-bottom: 90px;
+}
+
+.services__inner {
+    width: 225px;
+    height: 48px;
+}
+
+.services__inner a {
+    display: block;
+    margin-left: 90px;
+}
+
+.services__svg {
+    width: 46px;
+    height: 47px;
+    float: left;
+
+}
+
+.service__subtitle {
+    font-size: 16px;
+    line-height: 47px;
+}
+
+/*services====////*/
+
+
+/*about*/
+
+.about {
+    width: 100%;
+    height: 600px;
+    background: url(../img/img_02.png) no-repeat center center;
+    background-size: cover;
+ }
+
+.about__title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 88px 0 70px 0;
+
+}
+
+.about__text {
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.about__item {
+    color: #fff;
+    padding: 45px 0 120px 0;
+}
+
+.about__number {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+/*ways*/
+
+.ways {
+    width: 100%;
+    height: 500px;
+    background: #F5F5F5;
+}
+
+.ways__title {
+    font-weight: 700;
+    font-size: 30px;
+    padding: 76px 0px 96px 0px;
+}
+.ways__item {
+
+}
+
+.ways__inner {
+
+}
+
+.ways__svg {
+    width: 100px;
+    height: 90px;
+}
+
+.ways__subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 48px;
+}
+
+/*ways ====///*/
+
+/*platform*/
+.platform {
+    width: 100%;
+    height: 470px;
+    background: url(../img/img_03.png) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.platform__step  ul {
+    list-style: none;
+}
+
+
+
+
+
+
+/*reviews */
+
+.reviews {
+
+}
+
+.reviews__title {
+    text-align: center;
+}
+
+/*reviews==/// */
+
+
+
+
+
+
+
