@@ -29,7 +29,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    padding: 0;
+
 }
 
 
@@ -208,7 +208,7 @@ h6 {
 
 .services__inner a {
     display: block;
-    margin-left: 90px;
+
 }
 
 .services__svg {
@@ -303,11 +303,25 @@ h6 {
     color: #fff;
 }
 
-.platform__step  ul {
-    list-style: none;
+.platform__title {
+    padding-top: 50px;
+    padding-bottom: 35px;
+    font-size: 30px;
 }
 
+.platform__step {
+    width: 700px;
+    height: 130px;
+    margin-left: 0;
+    list-style: decimal;
+    font-size: 18px;
+    font-weight: 300;
+}
 
+.step {
+    padding-bottom: 20px;
+    float: left;
+}
 
 
 
