@@ -20,8 +20,6 @@ a:hover {
     text-decoration: none;
 }
 
-
-
 h1,
 h2,
 h3,
@@ -29,7 +27,6 @@ h4,
 h5,
 h6 {
     margin: 0;
-
 }
 
 
@@ -61,6 +58,26 @@ h6 {
     z-index: 10;
 }
 
+.btn--price {
+    width: 200px;
+    height: 55px;
+    background: linear-gradient(to bottom, #FF4921, #FF4C25);
+    margin-bottom: 5px;
+}
+
+.btn--green {
+
+    background: linear-gradient(to bottom, #008E00, #00A200);
+
+}
+
+.btn--blue {
+background: linear-gradient(to bottom, #02388F, #001C67);
+}
+
+.btn--contact {
+
+}
 
 /*header*/
 
@@ -148,7 +165,6 @@ h6 {
 
 /*section*/
 
-
 .section {
     width: 100%;
     height: 610px;
@@ -183,6 +199,7 @@ h6 {
     font-weight: 500;
 }
 
+
 /*services*/
 
 .services {
@@ -208,20 +225,19 @@ h6 {
 
 .services__inner a {
     display: block;
-
 }
 
 .services__svg {
     width: 46px;
     height: 47px;
     float: left;
-
 }
 
 .service__subtitle {
     font-size: 16px;
     line-height: 47px;
 }
+
 
 /*services====////*/
 
@@ -233,14 +249,13 @@ h6 {
     height: 600px;
     background: url(../img/img_02.png) no-repeat center center;
     background-size: cover;
- }
+}
 
 .about__title {
     color: #fff;
     font-size: 30px;
     font-weight: 700;
     padding: 88px 0 70px 0;
-
 }
 
 .about__text {
@@ -260,6 +275,7 @@ h6 {
     font-weight: 700;
 }
 
+
 /*ways*/
 
 .ways {
@@ -273,13 +289,10 @@ h6 {
     font-size: 30px;
     padding: 76px 0px 96px 0px;
 }
-.ways__item {
 
-}
+.ways__item {}
 
-.ways__inner {
-
-}
+.ways__inner {}
 
 .ways__svg {
     width: 100px;
@@ -292,9 +305,12 @@ h6 {
     margin-top: 48px;
 }
 
+
 /*ways ====///*/
 
+
 /*platform*/
+
 .platform {
     width: 100%;
     height: 470px;
@@ -324,23 +340,196 @@ h6 {
 }
 
 
-
-
 /*reviews */
 
 .reviews {
-
+    width: 100%;
+    height: 660px;
+    background-color: #F5F5F5;
 }
 
 .reviews__title {
+    font-size: 30px;
     text-align: center;
+    color: #313131;
+    font-weight: 700;
+    padding: 90px;
 }
+
+.nav__reviews {
+    color: #313131;
+}
+
+.nav-item {}
+
+.nav-link--focus {
+    border: 2px #E42626 solid;
+    border-radius: 5px;
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.nav-link:hover {
+    color: #E42626;
+}
+
 
 /*reviews==/// */
 
 
+/*partners*/
+
+.partners {
+    width: 100%;
+    height: 450px;
+}
+
+
+/*partners====///*/
+
+
+/*rate*/
+
+.rate {
+    width: 100%;
+    height: 1430px;
+    background-color: #F5F5F5;
+}
+
+.rate__title {
+    font-weight: 500;
+    font-size: 30px;
+    float: left;
+    padding-top: 90px;
+}
+
+.rate__subtitle {
+    width: 610px;
+    padding: 160px 0px 85px;
+    text-align: start;
+}
+
+
+.rate__suptitle {
+    width: 360px;
+    text-align: start;
+    font-weight: 16;
+    font-weight: 300;
+}
+
+.nav__rate {
+    width: 300px;
+    float: right;
+    margin-top:-68px;
+}
+
+.comparisons {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.comparisons__col {
+    height: 920px;
+    border: 1px solid #E8E8E8;
+}
+
+
+
+.comparisons__title {
+    font-size: 20px;
+    margin: 45px auto 51px;
+}
+
+.comparisons__img {
+    width: 200px;
+    height: 126px;
+    margin: 0 auto 38.5px;
+}
+
+ul.comparisons__inner {
+    list-style: none;
+    font-size: 11px;
+    font-weight: 300;
+
+
+}
+
+ .comparisons__item {
+    height: 37px;
+    line-height: 37px;
+    margin-left: -40px;
+    border-top: 1px solid #F5F5F5;
+     border-bottom: 1px solid #F5F5F5;
+
+}
+
+.comparisons__price {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 180px auto 15px;
+}
+
+.price {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/*rate====///*/
+
+/*contact=====*/
+
+.contact {
+    width: 100%;
+    height: 630px;
+}
+
+.contact__left {
+    width: 50%;
+    height: 630px;
+
+
+}
+
+.contact__form {
+
+}
+
+.form__title {
+    width: 320px;
+    height: 65px;
+    padding: 68px 0px 85px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.form-control {
+    width: 320px;
+    height: 50px;
+    text-align: start;
+}
+
+.form-group {
+    text-align: start;
+}
+
+.form--message {
+    width: 320px;
+    height: 80px;
+}
 
 
 
 
+
+
+
+
+
+
+
+/*contact=====   ///////*/
 
