@@ -242,11 +242,42 @@
         <!--    ////   reviews-->
         <!--        partners-->
         <section class="partners">
-            <div class="container">
+
                 <div class="partners__title">
                     <h3 class="">Партнеры Advogrand</h3> </div>
-                <div class="partners__slider"> </div>
-            </div>
+                <div class="partners__slider">
+                    <div class="partners__item">
+                        <img src="img/img_07.png" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="img/img_08.png" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="img/img_09.png" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <div class="partners__inner">
+                            <p>«Глобэкс» — российский коммерческий банк. Основан в 1992 году. В 2012 году банк «Глобэкс» вошёл в ежегодный рейтинг надёжности Forbes. Банк попал в группу «Высокая надёжность», заняв 30-е место с рейтингом 4 балла из 5-ти
+                            </p>
+                        </div>
+                    </div>
+                    <div class="partners__item">
+                        <img src="img/img_07.png" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="img/img_08.png" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="img/img_09.png" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <div class="partners__inner">
+                            <p>«Глобэкс» — российский коммерческий банк. Основан в 1992 году. В 2012 году банк «Глобэкс» вошёл в ежегодный рейтинг надёжности Forbes. Банк попал в группу «Высокая надёжность», заняв 30-е место с рейтингом 4 балла из 5-ти
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
         </section>
         <!--   /////     partners-->
         <!--       rate-->
@@ -309,11 +340,11 @@
         </section>
         <!--   ////    rate-->
         <!--        contact============-->
-        <section class="contact">
-            <div class="container">
-                <div class="contact__left">
+        <div class="container">
+            <div class="row contact">
+                <div class="col-6 contact__left">
                     <form class="contact__form">
-                       <h4 class="form__title">Напишите нам письмо или задайте свой вопрос</h4>
+                        <h4 class="form__title">Напишите нам письмо или задайте свой вопрос</h4>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputEmail4">Введите своё имя </label>
@@ -324,19 +355,64 @@
                             <input type="text" class="form-control" id="inputEmail4" placeholder="Номер телефона"> </div>
                         <div class="form-group ">
                             <label for="inputAddress2">Сообщение или вопрос</label>
-                            <input type="text" class="form-control form--message" id="inputAddress2" placeholder="Сообщение или вопрос"> </div>
-                        <button type="submit" class="btn btn--contact">Заказать звонок консультанта</button>
+                            <input type="text" class="form-control form--message" id="inputAddress2"> </div>
+                        <div class="button__center">
+                            <button type="submit" class="btn--contact">Заказать звонок консультанта</button>
+                            <p class="button__subtitle">Перезвоним вам в течении 5 минут</p>
+                        </div>
                     </form>
                 </div>
-                <div class="contact__right"></div>
+                <div class="col-6 contact__right">
+                    <div class="contact__title">
+                        <h3 class="contact__title">Контакты</h3> </div>
+                    <div class="contact__phone">
+                        <p class="contact__item">Телефон для покупки карт:</p>
+                        <p>+7 499 322-85-80</p>
+                    </div>
+                    <div class="contact__mail">
+                        <p class="contact__item">Email:</p>
+                        <p>info@advogrand.net</p>
+                    </div>
+                    <div class="contact__time">
+                        <p class="contact__item">Время работы:</p>
+                        <p>С понедельника по пятницу:</p>
+                        <p> 9:00 — 22:00 </p>
+                    </div>
+                    <div class="contact__time">
+                        <p>В праздничные и выходные дни: только телефонные консультации 10:00 — 20:00</p>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
         <!--        //////contact============-->
+        <!--        footer-->
+        <footer class="footer">
+
+            <div class="container">
+                <div class="footer__line">
+                    <a href="#" class="footer__link">
+                        <svg class="logo">
+                            <use xlink:href="img/sprite.svg#footer__logo--left"></use>
+                        </svg>
+                    </a>
+                    <a href="#" href="footer__link"><h6 class="footer__text">Разработка сайта:</h6></a>
+                    <a href="#" class="footer__link">
+                        <svg class="logo--2">
+                            <use xlink:href="img/sprite.svg#pattern"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+        <!--     /////   footer-->
     </main>
     <!--   js-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
 </body>
 
 </html>
