@@ -52,10 +52,7 @@ h6 {
     font-weight: 500;
     font-size: 18px;
     background: linear-gradient(to right, #C11717, #E42626);
-    position: absolute;
-    top: 415px;
-    left: 50px;
-    z-index: 10;
+    margin: 250px 0px 25px;
 }
 
 .btn--price {
@@ -66,13 +63,11 @@ h6 {
 }
 
 .btn--green {
-
     background: linear-gradient(to bottom, #008E00, #00A200);
-
 }
 
 .btn--blue {
-background: linear-gradient(to bottom, #02388F, #001C67);
+    background: linear-gradient(to bottom, #02388F, #001C67);
 }
 
 .btn--contact {
@@ -90,8 +85,6 @@ background: linear-gradient(to bottom, #02388F, #001C67);
 .btn--contact:hover {
     background: #CC0000;
 }
-
-
 
 
 /*header*/
@@ -194,6 +187,8 @@ background: linear-gradient(to bottom, #02388F, #001C67);
     color: #000;
     font-size: 32px;
     width: 845px;
+    text-align: start;
+
 }
 
 .section__title h1 {
@@ -206,6 +201,7 @@ background: linear-gradient(to bottom, #02388F, #001C67);
     color: #000;
     float: left;
     font-weight: 500;
+    text-align: start;
 }
 
 .section__text p {
@@ -251,6 +247,10 @@ background: linear-gradient(to bottom, #02388F, #001C67);
 .service__subtitle {
     font-size: 16px;
     line-height: 47px;
+}
+
+.service__subtitle:hover {
+    color: #C11717;
 }
 
 
@@ -355,6 +355,10 @@ background: linear-gradient(to bottom, #02388F, #001C67);
 }
 
 
+
+
+
+
 /*reviews */
 
 .reviews {
@@ -368,7 +372,7 @@ background: linear-gradient(to bottom, #02388F, #001C67);
     text-align: center;
     color: #313131;
     font-weight: 700;
-    padding: 90px;
+    padding: 89px 5px 34px;
 }
 
 .nav__reviews {
@@ -392,15 +396,79 @@ background: linear-gradient(to bottom, #02388F, #001C67);
 }
 
 
-/*reviews==/// */
+.reviews__slider {
+    width: 980px;
+    height: 300px;
+    margin: 35px auto 0;
+    position: relative;
+    padding: 0 45px;
+    text-align: center;
+}
 
+.reviews__subtitle {
+    font-size: 13px;
+    font-weight: 300;
+    padding: 15px 0px;
+    width: 100%;
+    text-align: start;
+}
+
+.reviews__subtitle:hover {
+    text-decoration: underline;
+    color: #E42626;
+}
+
+.reviews__item {
+    width: 250px;
+    padding: 0 15px 15px 15px;
+
+
+}
+
+.slick-active {
+    outline: none;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.reviews__slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+}
+
+.reviews__slider .slick-arrow:focus {
+    border: none;
+}
+
+.reviews__slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url('../img/svg_right.svg') 0 0 / 100% no-repeat;
+}
+
+.reviews__slider .slick-arrow.slick-next {
+    right: 0;
+    background: url('../img/svg_left.svg') 0 0 / 100% no-repeat;
+}
+
+/*reviews==/// */
 
 /*partners*/
 
 .partners {
     width: 100%;
     height: 450px;
-
 }
 
 .partners__title {
@@ -419,8 +487,6 @@ background: linear-gradient(to bottom, #02388F, #001C67);
     text-align: center;
 }
 
-
-
 .partners__item {
     width: 220px;
     height: 140px;
@@ -437,7 +503,7 @@ background: linear-gradient(to bottom, #02388F, #001C67);
 }
 
 .slick-active {
-  outline: none;
+    outline: none;
 }
 
 .slick-list {
@@ -463,20 +529,15 @@ background: linear-gradient(to bottom, #02388F, #001C67);
     border: none;
 }
 
-.partners__slider .slick-arrow.slick-prev{
+.partners__slider .slick-arrow.slick-prev {
     left: 0;
     background: url('../img/svg_right.svg') 0 0 / 100% no-repeat;
-
 }
 
 .partners__slider .slick-arrow.slick-next {
     right: 0;
     background: url('../img/svg_left.svg') 0 0 / 100% no-repeat;
-
 }
-
-
-
 
 
 /*partners====///*/
@@ -503,7 +564,6 @@ background: linear-gradient(to bottom, #02388F, #001C67);
     text-align: start;
 }
 
-
 .rate__suptitle {
     width: 360px;
     text-align: start;
@@ -514,7 +574,7 @@ background: linear-gradient(to bottom, #02388F, #001C67);
 .nav__rate {
     width: 300px;
     float: right;
-    margin-top:-68px;
+    margin-top: -68px;
 }
 
 .comparisons {
@@ -526,8 +586,6 @@ background: linear-gradient(to bottom, #02388F, #001C67);
     height: 920px;
     border: 1px solid #E8E8E8;
 }
-
-
 
 .comparisons__title {
     font-size: 20px;
@@ -544,17 +602,14 @@ ul.comparisons__inner {
     list-style: none;
     font-size: 11px;
     font-weight: 300;
-
-
 }
 
- .comparisons__item {
+.comparisons__item {
     height: 37px;
     line-height: 37px;
     margin-left: -40px;
-    border-top: 1px solid #F5F5F5;
-     border-bottom: 1px solid #F5F5F5;
 
+    border-bottom: 1px solid #F5F5F5;
 }
 
 .comparisons__price {
@@ -568,7 +623,9 @@ ul.comparisons__inner {
     margin-bottom: 25px;
 }
 
+
 /*rate====///*/
+
 
 /*contact=====*/
 
@@ -580,13 +637,9 @@ ul.comparisons__inner {
 .contact__left {
     width: 50%;
     height: 630px;
-
-
 }
 
-.contact__form {
-
-}
+.contact__form {}
 
 .form__title {
     width: 320px;
@@ -642,15 +695,13 @@ ul.comparisons__inner {
     margin: 20px 0 10px;
 }
 
-.contact__phone {
-
-}
-
 .contact__time {
     width: 280px;
 }
 
+
 /*contact=====   ///////*/
+
 
 /*footer*/
 
@@ -659,8 +710,6 @@ ul.comparisons__inner {
     height: 135px;
     background: #0E0E0E;
     color: #fff;
-
-
 }
 
 .footer__line {
@@ -668,14 +717,11 @@ ul.comparisons__inner {
     justify-content: space-between;
 }
 
-
-
 .footer__link {
     display: block;
     width: 33%;
     color: #fff;
     line-height: 135px;
-
 }
 
 .logo {
@@ -688,7 +734,6 @@ ul.comparisons__inner {
     height: 54px;
     float: right;
     margin-top: 34px;
-
 }
 
 .footer__text {
@@ -699,14 +744,5 @@ ul.comparisons__inner {
     font-size: 13px;
 }
 
+
 /*footer====///*/
-
-
-
-
-
-
-
-
-
-
