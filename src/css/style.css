@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    background-color: #fff;
+    background: #fff;
 }
 
 .container {
@@ -33,17 +33,33 @@ h6 {
 /*btn*/
 
 .btn {
-    width: 140px;
-    height: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     font-weight: 700;
     font-size: 12px;
-    background: linear-gradient(to right, #C11717, #E42626);
-    border-radius: 5px;
     color: #fff;
+    cursor: pointer;
+    border: 2px solid #E42626;
+    padding: 5px 5px;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 2px #f26060;
 }
 
 .btn:hover {
-    color: #fff;
+    color: #E42626;
+    background: #fff;
+    border: 2px solid #E42626;
+    transition: .2s;
+}
+
+.btn-header {
+    width: 140px;
+    height: 30px;
+    background: linear-gradient(to right, #C11717, #E42626);
+    border-radius: 5px;
 }
 
 .btn--big {
@@ -176,9 +192,9 @@ h6 {
 .section {
     width: 100%;
     height: 610px;
-    background: url(../img/img_01.png) no-repeat center center;
+    background: url(../img/img_01.png) no-repeat center top -150px;
     background-size: cover;
-    margin: 0 auto;
+
 }
 
 .section__image {}
@@ -188,7 +204,6 @@ h6 {
     font-size: 32px;
     width: 845px;
     text-align: start;
-
 }
 
 .section__title h1 {
@@ -355,10 +370,6 @@ h6 {
 }
 
 
-
-
-
-
 /*reviews */
 
 .reviews {
@@ -395,7 +406,6 @@ h6 {
     color: #E42626;
 }
 
-
 .reviews__slider {
     width: 980px;
     height: 300px;
@@ -421,8 +431,6 @@ h6 {
 .reviews__item {
     width: 250px;
     padding: 0 15px 15px 15px;
-
-
 }
 
 .slick-active {
@@ -462,7 +470,9 @@ h6 {
     background: url('../img/svg_left.svg') 0 0 / 100% no-repeat;
 }
 
+
 /*reviews==/// */
+
 
 /*partners*/
 
@@ -608,7 +618,6 @@ ul.comparisons__inner {
     height: 37px;
     line-height: 37px;
     margin-left: -40px;
-
     border-bottom: 1px solid #F5F5F5;
 }
 
