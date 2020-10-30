@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     background: #fff;
 }
 
@@ -33,15 +33,16 @@ h6 {
 /*btn*/
 
 .btn {
+    display: inline-block;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-weight: 700;
-    font-size: 12px;
     color: #fff;
     cursor: pointer;
-    border: 2px solid #E42626;
+    font-weight: 700;
+    font-family: inherit;
     padding: 5px 5px;
+    background: linear-gradient(to right, #C11717, #E42626);
 }
 
 .btn:focus {
@@ -51,39 +52,66 @@ h6 {
 .btn:hover {
     color: #E42626;
     background: #fff;
-    border: 2px solid #E42626;
+    box-shadow: 0 0 0 2px #f26060;
     transition: .2s;
+    font-weight: 800;
 }
 
-.btn-header {
+.btn--header {
     width: 140px;
     height: 30px;
-    background: linear-gradient(to right, #C11717, #E42626);
     border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0 0 0 2px #C11717;
+    margin: 10px auto;
 }
 
 .btn--big {
     width: 300px;
     height: 65px;
-    font-weight: 500;
     font-size: 18px;
-    background: linear-gradient(to right, #C11717, #E42626);
-    margin: 250px 0px 25px;
+    margin: 48px 100px 0 0;
+    float: left;
+
+    font-weight: 700;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 0 0 2px #f26060;
 }
 
 .btn--price {
     width: 200px;
     height: 55px;
     background: linear-gradient(to bottom, #FF4921, #FF4C25);
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 0 2px #f26060;
 }
 
 .btn--green {
+    width: 200px;
+    height: 55px;
     background: linear-gradient(to bottom, #008E00, #00A200);
+    margin-bottom: 15px;
+    box-shadow: 0 0 0 2px rgb(54, 119, 6);
 }
 
 .btn--blue {
+    width: 200px;
+    height: 55px;
     background: linear-gradient(to bottom, #02388F, #001C67);
+    margin-bottom: 15px;
+     box-shadow: 0 0 0 2px #271493;
+}
+
+.btn--blue:hover {
+    box-shadow: 0 0 0 2px #442fbc;
+    color: #442fbc;
+}
+
+.btn--green:hover {
+    box-shadow: 0 0 0 2px rgba(21, 142, 11, 0.97);
+    color: #00A200;
 }
 
 .btn--contact {
@@ -105,19 +133,48 @@ h6 {
 
 /*header*/
 
-.nav {
+.header {
     width: 100%;
-    height: 57px;
-    font-size: 14px;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 50px;
+    border-bottom: 1px solid #F5F5F5;
+    background: #fff;
+    position: relative;
+
+
+
+
 }
 
-.nav-item {}
+.header-fixed header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position:fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+
+
+}
+
+.nav {
+    width: 940px;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 auto;
+
+
+}
+
+.nav-item {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px 0 15px;
+}
 
 .nav-link {
+    padding: 0;
     color: #1C1C1C;
 }
 
@@ -127,6 +184,8 @@ h6 {
 .intro {
     width: 100%;
     height: 80px;
+    display: block;
+    margin-top: 50px;
 }
 
 .intro__contact {
@@ -154,6 +213,11 @@ h6 {
     align-items: center;
     font-size: 14px;
     line-height: 80px;
+}
+
+.connection a:hover,
+.intro__number a:hover {
+    color: #C11717;
 }
 
 .intro__number {
@@ -192,31 +256,48 @@ h6 {
 .section {
     width: 100%;
     height: 610px;
-    background: url(../img/img_01.png) no-repeat center top -150px;
+    background: url(../img/img_01.png) no-repeat center center;
     background-size: cover;
-
+    position: relative;
 }
 
-.section__image {}
+.section:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+.section__content {
+    padding: 110px 0px  0px;
+    margin-bottom: 55px;
+}
+
+
 
 .section__title {
-    color: #000;
+    color: #fff;
     font-size: 32px;
     width: 845px;
     text-align: start;
+    position: relative;
+    z-index: 3;
+    padding-bottom: 45px;
 }
 
-.section__title h1 {
-    float: left;
-    margin-top: 100px;
-}
+
 
 .section__text {
     width: 630px;
-    color: #000;
-    float: left;
+    color: #fff;
+    position: relative;
+    z-index: 3;
     font-weight: 500;
     text-align: start;
+    font-size: 24px;
 }
 
 .section__text p {
@@ -230,14 +311,14 @@ h6 {
 
 .services {
     width: 100%;
-    height: 630px;
+    height: 610px;
 }
 
 .services__title {
     font-weight: 700;
     font-size: 30px;
     color: #1C1C1C;
-    margin: 88px auto 56px;
+    margin: 65px auto 85px;
 }
 
 .services__item {
@@ -257,6 +338,7 @@ h6 {
     width: 46px;
     height: 47px;
     float: left;
+    fill: #C20C0C;
 }
 
 .service__subtitle {
@@ -279,28 +361,49 @@ h6 {
     height: 600px;
     background: url(../img/img_02.png) no-repeat center center;
     background-size: cover;
+    position: relative;
+}
+
+.about:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
 }
 
 .about__title {
+    display: block;
     color: #fff;
     font-size: 30px;
     font-weight: 700;
     padding: 88px 0 70px 0;
+    position: relative;
+    z-index: 3;
 }
 
+.about__link {}
+
 .about__text {
+    position: relative;
+    z-index: 3;
     color: #fff;
     font-weight: 300;
     font-size: 16px;
 }
 
-.about__item {
+.about__statistics {
+    position: relative;
+    z-index: 3;
     color: #fff;
     padding: 45px 0 120px 0;
 }
 
 .about__number {
-    color: #fff;
+    display: block;
     font-size: 48px;
     font-weight: 700;
 }
@@ -346,27 +449,57 @@ h6 {
     height: 470px;
     background: url(../img/img_03.png) no-repeat center center;
     background-size: cover;
-    color: #fff;
+
+    position: relative;
+}
+
+.platform:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
 }
 
 .platform__title {
-    padding-top: 50px;
-    padding-bottom: 35px;
+    display: block;
+    position: relative;
     font-size: 30px;
+    color: #fff;
+    padding-top: 90px;
+    z-index: 4;
 }
 
 .platform__step {
+    position: relative;
     width: 700px;
     height: 130px;
     margin-left: 0;
     list-style: decimal;
     font-size: 18px;
     font-weight: 300;
+    color: #fff;
+    z-index: 3;
+    margin: 85px auto;
+}
+
+.platform__link {
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 3;
+    color: #fff;
+}
+
+.platform__link:hover {
+    text-decoration: underline;
+    color: #fff;
 }
 
 .step {
-    padding-bottom: 20px;
-    float: left;
+    padding-bottom: 15px;
 }
 
 
@@ -395,6 +528,7 @@ h6 {
 .nav-link--focus {
     border: 2px #E42626 solid;
     border-radius: 5px;
+    color: #E42626;
 }
 
 .nav-link {
@@ -428,9 +562,26 @@ h6 {
     color: #E42626;
 }
 
+
+
 .reviews__item {
     width: 250px;
     padding: 0 15px 15px 15px;
+
+}
+
+.reviews__link {
+    position: relative;
+    z-index: 2;
+}
+
+.play_svg {
+    width: 25x;
+    height: 25px;
+    position: absolute;
+
+    left: -50%;
+    z-index: 3;
 }
 
 .slick-active {
@@ -447,7 +598,7 @@ h6 {
 
 .reviews__slider .slick-arrow {
     position: absolute;
-    top: 50%;
+    top: 35%;
     z-index: 10;
     font-size: 0;
     width: 30px;
@@ -562,34 +713,46 @@ h6 {
 }
 
 .rate__title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 30px;
     float: left;
     padding-top: 90px;
+    line-height: 1.2;
+}
+
+.rate__text {
+    width: 600px;
+    padding: 160px 0px 20px;
 }
 
 .rate__subtitle {
     width: 610px;
-    padding: 160px 0px 85px;
+    margin-bottom: 35px;
     text-align: start;
+    font-size: 18px;
 }
 
 .rate__suptitle {
-    width: 360px;
-    text-align: start;
-    font-weight: 16;
+    display: block;
+    width: 370px;
+    float: left;
+    font-size: 16px;
     font-weight: 300;
+
+
 }
 
 .nav__rate {
     width: 300px;
     float: right;
-    margin-top: -68px;
+
+
 }
 
 .comparisons {
     background-color: #ffffff;
     color: #000;
+    width: 100%;
 }
 
 .comparisons__col {
@@ -603,22 +766,41 @@ h6 {
 }
 
 .comparisons__img {
+
     width: 200px;
     height: 126px;
-    margin: 0 auto 38.5px;
+
+}
+
+.comparisons__img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 ul.comparisons__inner {
     list-style: none;
     font-size: 11px;
     font-weight: 300;
+    margin: 30px;
+
 }
 
 .comparisons__item {
     height: 37px;
     line-height: 37px;
+    vertical-align: middle;
     margin-left: -40px;
-    border-bottom: 1px solid #F5F5F5;
+    border-bottom: 2px solid #F5F5F5;
+}
+
+.comparisons__item:first-child {
+    border-top: 2px solid #F5F5F5;
+}
+
+.comparisons__item:hover {
+
 }
 
 .comparisons__price {
@@ -641,27 +823,44 @@ ul.comparisons__inner {
 .contact {
     width: 100%;
     height: 630px;
+
 }
 
-.contact__left {
+.contact__content {
     width: 50%;
     height: 630px;
+    color: #000000;
 }
 
-.contact__form {}
+.contact--left {
+    background: #F5F5F5;
+}
+
+
+.contact__form {
+    background: #F5F5F5;
+    float: right;
+    height: 630px;
+    margin-right: 80px;
+}
+
 
 .form__title {
     width: 320px;
     height: 65px;
-    padding: 68px 0px 85px;
+
+    margin: 65px 0px 50px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     text-align: start;
+    line-height: 1.5;
 }
 
 .form-control {
+    font-family: inherit;
     width: 320px;
     height: 50px;
+    color: #fff;
     text-align: start;
 }
 
@@ -683,30 +882,35 @@ ul.comparisons__inner {
 .button__subtitle {
     font-size: 13px;
     font-weight: 300;
-    margin: 15px 0px 60px;
+    margin: 15px auto 60px;
+    text-align: center;
 }
 
-.contact__right {
+.contact__information {
+
     font-weight: 500;
     font-size: 17px;
-    width: 50%;
     text-align: start;
+    margin: 88px 0px 35px 155px;
 }
 
 .contact__title {
     font-size: 30px;
-    margin: 88px 0 67px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 67px;
+}
+
+.mail {
+    text-decoration: underline;
 }
 
 .contact__item {
+    margin-top: 21px;
     font-size: 13px;
     font-weight: 300;
-    margin: 20px 0 10px;
 }
 
-.contact__time {
-    width: 280px;
-}
 
 
 /*contact=====   ///////*/
@@ -753,5 +957,29 @@ ul.comparisons__inner {
     font-size: 13px;
 }
 
+.fixed-top {
+    display: none;
+}
 
 /*footer====///*/
+
+/*MEDIA*/
+
+@media (max-width: 999px) {
+    .nav {
+        display: none;
+    }
+    .fixed-top {
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+
+
+

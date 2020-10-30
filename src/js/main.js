@@ -13,3 +13,19 @@ $(document).ready(function () {
         , slidesToScroll: 3
     });
 });
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        const headerOffset = $('#header--header').offset().top;
+        const scrolled = $(this).scrollTop();
+            if (scrolled > headerOffset) {
+                //шапка прилипла
+                $('#wrapper').addClass('header-fixed');
+            } else if (scrolled < headerOffset) {
+                //шапка отлипла
+                $('#wrapper').removeClass('header-fixed');
+            }
+        console.log(headerOffset);
+        console.log(scrolled);
+    });
+});
