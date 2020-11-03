@@ -258,6 +258,7 @@ h6 {
     height: 610px;
     background: url(../img/img_01.png) no-repeat center center;
     background-size: cover;
+    background-size: auto 100%;
     position: relative;
 }
 
@@ -957,8 +958,30 @@ ul.comparisons__inner {
     font-size: 13px;
 }
 
-.fixed-top {
+.bureger {
     display: none;
+
+}
+
+.bureger__navbar {
+    width: 350px;
+    color: #fff;
+    height: auto;
+}
+
+.bureger__item {
+
+}
+
+
+.bureger__link {
+font-size: 16px;
+    font-weight: 700;
+    color: #fff !important;
+}
+.bureger__link:hover {
+    font-size: 18px;
+    color: #fff;
 }
 
 /*footer====///*/
@@ -969,8 +992,11 @@ ul.comparisons__inner {
     .nav {
         display: none;
     }
-    .fixed-top {
+    .bureger {
         display: block;
+    }
+    .intro {
+        display: none;
     }
 
 }
